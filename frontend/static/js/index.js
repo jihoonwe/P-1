@@ -1,21 +1,16 @@
 import Home from "./pages/Home.js";
-import Settings from "./pages/Settings.js";
+import Register from "./pages/Register.js";
 import NotFound from "./pages/NotFound.js";
+import Login from "./pages/Login.js";
 
 const router = async () => {
     const routes = [
         { path: "/", view: Home }, //view: 해당 경로에서 나타내는 html
         { path: "/main", view: Home },
-        { path: "/settings", view: Settings },
-        
-        { path: "/settings", view: Settings },
-        { path: "/settings", view: Settings },
-        { path: "/signup", view: Settings },
-        { path: "/register", view: Settings },
-        { path: "/post1", view: Settings },
-        { path: "/settings", view: Settings },
-
+        { path: "/login", view: Login },
+        { path: "/register", view: Register }
     ];
+    console.log(document.getElementById("tit"));
 
     const pageMatches = routes.map((route) => {
         return {
